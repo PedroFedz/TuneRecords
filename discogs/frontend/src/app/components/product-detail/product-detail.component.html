@@ -1,0 +1,48 @@
+<div class="container-init">
+  <img class = "back-img" src = "{{urlBack}}">
+  <h1 class="text">{{artist}}</h1>
+  <h1 class="song-title">{{title}}</h1>
+</div>
+
+
+<div class="container-main">
+  <img src="{{img}}" alt="Ghosteame" class="img">
+
+  <div class="container-lyrics">
+    <pre class="text-lyrics">{{lyrics}}</pre>
+  </div>
+  <div class="container-back">
+    <div class="cards-container">
+      <div class="card-container" *ngFor="let product of products | slice:from:to">
+        <a routerLink="/product-detail/{{product.title}}/{{product.artist}}" class="link">
+          <div class="card-header">
+            <img class="img-avatar" src="{{product.imageUrl}}">
+            <div class="text-chat">{{product.title}}</div>
+          </div>
+        </a>
+        <div class="card-body">
+          <div class="messages-container">
+              <div class="message-box left">
+                  <p class="text-artist">{{product.artist}}</p>
+              </div>
+              <div class="message-box right">
+                  <p class="message-genero">{{product.genero}}</p>
+                  <div class="message-input">
+                    <button type="submit" class="button-send"><a  href="{{product.itunesUrl}}" style="color: white; text-decoration: none;">{{product.price}} $</a></button>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+

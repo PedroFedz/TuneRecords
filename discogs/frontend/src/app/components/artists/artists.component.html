@@ -1,0 +1,72 @@
+<div class="container-init">
+
+  <img class = "back-img" src = "{{urlBack}}">
+  <h1 class="text">{{artist}}</h1>
+</div>
+
+<div class="container-main">
+  <div class="container-img">
+    <img class="artist-img" src="{{url}}">
+  </div>
+
+  <div class="container-logo">
+    <div class="search">
+      <input type="text" class="searchinput" [(ngModel)]="keyword" placeholder="Busque su producto ...">
+      <button class="searchbutton" (click)="getProduct(keyword)">
+        <svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M445,386.7l-84.8-85.9c13.8-24.1,21-50.9,21-77.9c0-87.6-71.2-158.9-158.6-158.9C135.2,64,64,135.3,64,222.9  c0,87.6,71.2,158.9,158.6,158.9c27.9,0,55.5-7.7,80.1-22.4l84.4,85.6c1.9,1.9,4.6,3.1,7.3,3.1c2.7,0,5.4-1.1,7.3-3.1l43.3-43.8  C449,397.1,449,390.7,445,386.7z M222.6,125.9c53.4,0,96.8,43.5,96.8,97c0,53.5-43.4,97-96.8,97c-53.4,0-96.8-43.5-96.8-97  C125.8,169.4,169.2,125.9,222.6,125.9z"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container-products">
+  <div class="products">
+    <hr style="width: 100%;">
+    <div class="list">
+        <div class="product_list">
+
+          <div class="card-container" *ngFor="let product of resultados | paginate: { itemsPerPage: 12, currentPage: page}">
+            <a routerLink="/product-detail/{{product.title}}/{{product.artist}}" class="link">
+              <div class="card-header">
+                <img class="img-avatar" src="{{product.imageUrl}}">
+                <div class="text-chat">{{product.title}}</div>
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="messages-container">
+                  <div class="message-box left">
+                      <p class="text-artist">{{product.artist}}</p>
+                  </div>
+                  <div class="message-box right">
+                      <p class="message-genero">{{product.genero}}</p>
+                      <div class="message-input">
+                        <button type="submit" class="button-send"><a  href="{{product.itunesUrl}}" style="color: white; text-decoration: none;">{{product.price}} $</a></button>
+                      </div>
+                  </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="container-paginacion">
+  <pagination-controls (pageChange)="page = $event" previousLabel="Previous"  nextLabel="Next"></pagination-controls>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

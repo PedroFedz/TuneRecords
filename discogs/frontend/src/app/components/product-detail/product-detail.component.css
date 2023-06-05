@@ -1,0 +1,369 @@
+.container-main{
+  position:relative;
+  left:-10em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container-logo{
+  width:80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container-init{
+  width: 100%;
+  height: 70%;
+  position:relative;
+  margin-left: -5em;
+  margin-top: -5em;
+}
+
+.container-lyrics {
+  overflow-wrap: break-word;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.text-lyrics{
+  max-width: 50%;
+  font-size: 25px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.song-title {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: white;
+  margin-top: 0.25em;
+  margin-left: 0.5em;
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  line-height: 1;
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  margin-top: 0.25em;
+  margin-left: 0.5em;
+  font-size: 10em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  line-height: 1;
+}
+
+
+.img {
+  width: 300px;
+  height: 300px;
+  margin-top: -180px;
+  z-index: 10000;
+
+}
+
+.back-img {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  filter: blur(10px) brightness(80%) contrast(120%)
+          drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 100%;
+}
+
+.nombre-app {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 160px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+
+.container-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.searchinput {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: black;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 50em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.searchbutton {
+  border: none;
+  background-color: aqua;
+  width: 2em;
+  height: 2em;
+  margin-top: .1em;
+  z-index: 10000;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.container-products {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.products{
+  /* Corregimos la posición */
+    width: 50em;
+    margin-top: 2em;
+
+
+
+}
+.list{
+  background-color: #dfe8fc;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.product_list{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  justify-content: center;
+  background-color: #F5F3F5;
+  margin-bottom: 10px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  border-radius: 1em;
+
+}
+
+
+.image_flex_row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  width: auto;
+
+  height: 150px;
+  background-color: white;
+  border-radius: 1em;
+
+  .product_image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+.product_name{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+.product_price{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+}
+
+.container-paginacion{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-cards{
+  display: flex;
+  width: 100%;
+  justify-content:space-around;
+}
+
+
+.card-container {
+  background: rgb(45,0,180);
+  background: -moz-linear-gradient(324deg, rgba(45,0,180,1) 0%, rgba(0,215,255,1) 100%);
+  background: -webkit-linear-gradient(324deg, rgba(45,0,180,1) 0%, rgba(0,215,255,1) 100%);
+  background: linear-gradient(324deg, rgba(45,0,180,1) 0%, rgba(0,215,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d00b4",endColorstr="#00d7ff",GradientType=1);
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header .img-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #333;
+}
+
+.card-header .text-chat {
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px;
+  background-color:#F5F3F5;
+  border-radius: 20px;
+}
+
+.message-box {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.message-box.left {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 20px;
+  left: 0;
+}
+
+.message-box.right {
+  text-align: center;
+  font-size: 20px;
+  right: 0;
+}
+
+.message-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.message-input .message-send {
+  margin-top: 4em;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.message-input .button-send {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.message-input .button-send:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.message-genero{
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+
+.text-artist {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+a.link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.cards-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container-back {
+  display: flex;
+  align-items: center;
+  width: 110%;
+  height: 120%;
+}
+
+
+
+
